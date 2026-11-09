@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Day & Sustainability Portal | UniKL Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const contentData = {
+            1: {
+                title: "1. History of Earth Day",
+                body: `
+                    <p class="mb-3"><strong>Origin & Establishment:</strong><br>Earth Day was first officially observed on April 22, 1970. It was founded by Senator Gaylord Nelson of the United States after witnessing the massive environmental destruction caused by the 1969 Santa Barbara oil spill in California.</p>
+                    <p class="mb-3"><strong>A Global Movement:</strong><br>The initial rally mobilized over 20 million Americans to take to the streets, demanding stricter environmental regulations. This historic movement led to the creation of the United States Environmental Protection Agency (EPA) and the passage of landmark legislation such as the Clean Air Act.</p>
+                    <p><strong>Impact Today:</strong><br>Today, Earth Day is coordinated globally by EARTHDAY.ORG and is celebrated by over 1 billion people across 192 countries, making it the largest civic environmental movement in the world.</p>
+                `
+            },
+            2: {
+                title: "2. Major Global Environmental Issues",
+                body: `
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Climate Change & Global Warming:</strong> Rising global temperatures driven by greenhouse gas emissions (CO2 and Methane), leading to polar ice melt and rising sea levels.</li>
+                        <li><strong>Ocean Plastic Pollution:</strong> Millions of tons of plastic waste enter marine ecosystems annually, threatening ocean life and entering human food chains through microplastics.</li>
+                        <li><strong>Deforestation:</strong> Rapid clearing of tropical rainforests for industrial agriculture reduces natural carbon sinks and destroys critical habitats for endangered species.</li>
+                        <li><strong>Biodiversity Crisis:</strong> Species extinction is occurring at a rate 1,000 times faster than natural background rates due to human industrial activity.</li>
+                    </ul>
+                `
+            },
+            3: {
+                title: "3. Sustainable Practices & Green Living",
+                body: `
+                    <p class="mb-2"><strong>1. Waste Management (The 5Rs):</strong></p>
+                    <p class="mb-3 text-sm bg-gray-50 p-2 rounded border">Refuse single-use plastics, Reduce unnecessary consumption, Reuse existing materials, Repurpose discarded items, and Recycle waste properly.</p>
+                    <p class="mb-2"><strong>2. Energy Efficiency at Home & Campus:</strong></p>
+                    <p class="mb-3 text-sm bg-gray-50 p-2 rounded border">Switch to energy-saving LED bulbs, turn off unused electrical appliances, and set air conditioner temperatures between 24°C and 26°C.</p>
+                    <p class="mb-2"><strong>3. Sustainable Transportation:</strong></p>
+                    <p class="text-sm bg-gray-50 p-2 rounded border">Utilize public transit, carpool with peers, walk, or cycle to significantly reduce daily personal carbon footprints.</p>
+                `
+            },
+            4: {
+                title: "4. UniKL Earth Day Events & Initiatives",
+                body: `
+                    <p class="mb-3"><strong>Campus Tree-Planting Drive:</strong><br>An initiative aimed at greening the UniKL campus by planting 500 native tree saplings to enhance natural shade and boost carbon absorption.</p>
+                    <p class="mb-3"><strong>E-Waste & Plastic Collection Campaign:</strong><br>A structured collection drive for old electronics (laptops, phones, batteries) and plastic bottles, rewarding student contributors with green credits.</p>
+                    <p><strong>Sustainability Webinars:</strong><br>Online panel sessions featuring green industry experts discussing career opportunities in renewable energy and green technology.</p>
+                `
+            },
+            5: {
+                title: "5. Environmental Activists Spotlight",
+                body: `
+                    <div class="space-y-3">
+                        <div class="p-2 border-l-4 border-emerald-600 bg-emerald-50">
+                            <h4 class="font-bold text-emerald-900">Greta Thunberg (Global)</h4>
+                            <p class="text-xs text-gray-700">Founder of the 'Fridays for Future' movement, inspiring millions of youth worldwide to demand immediate climate action from world leaders.</p>
+                        </div>
+                        <div class="p-2 border-l-4 border-emerald-600 bg-emerald-50">
+                            <h4 class="font-bold text-emerald-900">Wangari Maathai (Africa)</h4>
+                            <p class="text-xs text-gray-700">Nobel Peace Prize laureate and founder of the Green Belt Movement, which empowered women across Kenya to plant over 51 million trees.</p>
+                        </div>
+                        <div class="p-2 border-l-4 border-emerald-600 bg-emerald-50">
+                            <h4 class="font-bold text-emerald-900">Malaysian Local Activists</h4>
+                            <p class="text-xs text-gray-700">Local organizations championing the protection of the Belum-Temengor Rainforest and conserving coral reef ecosystems nationwide.</p>
+                        </div>
+                    </div>
+                `
+            },
+            6: {
+                title: "6. UniKL Student Innovation Projects",
+                body: `
+                    <p class="mb-3"><strong>Smart IoT Recycling Bin:</strong><br>An innovative project by UniKL engineering students using IoT sensors to track bin capacity levels in real-time for efficient waste collection.</p>
+                    <p class="mb-3"><strong>Single-Use Plastic Ban Campaign:</strong><br>An initiative encouraging campus members to bring reusable food containers and water bottles, offering meal discounts at UniKL cafeterias.</p>
+                    <p><strong>Vertical Campus Herb Garden:</strong><br>Implementation of vertical green walls on faculty building facades to lower indoor temperatures naturally through bio-shading.</p>
+                `
+            },
+            7: {
+                title: "7. Volunteer Opportunities",
+                body: `
+                    <p class="mb-2"><strong>Active Volunteer Programs:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1 mb-3">
+                        <li>Coastal Beach Clean-up drives with local conservation groups.</li>
+                        <li>Mangrove Restoration Projects in collaboration with the Forestry Department.</li>
+                        <li>Zero-Waste Squad duties during major campus events.</li>
+                    </ul>
+                    <p><strong>Volunteer Benefits:</strong><br>Earn student merit points, receive official certificates of participation, and gain hands-on experience in environmental project management.</p>
+                `
+            },
+            8: {
+                title: "8. Interactive Quiz & Awareness Modules",
+                body: `
+                    <div class="bg-gray-50 p-4 rounded-lg border">
+                        <h4 class="font-bold text-emerald-800 mb-2">Test Your Knowledge:</h4>
+                        <p class="text-sm mb-2"><strong>Question:</strong> How long does it take for a single plastic bottle to fully decompose in a landfill?</p>
+                        <p class="text-xs text-gray-600 bg-white p-2 rounded border"><strong>Answer:</strong> Approximately 450 years! This highlights why reducing plastic reliance is critical.</p>
+                    </div>
+                `
+            },
+            9: {
+                title: "9. Resource Library & Educational Material",
+                body: `
+                    <p class="mb-2"><strong>Recommended Documentaries:</strong></p>
+                    <p class="text-xs bg-gray-50 p-2 rounded mb-3 border">• Our Planet (Netflix) | • A Life on Our Planet (David Attenborough) | • Cowspiracy</p>
+                    <p class="mb-2"><strong>Key Reports & Reading Material:</strong></p>
+                    <p class="text-xs bg-gray-50 p-2 rounded border">• IPCC Assessment Reports on Climate Change<br>• United Nations Sustainable Development Goals (UN SDGs 13 & 15)</p>
+                `
+            },
+            10: {
+                title: "10. DIY Eco-Friendly Projects",
+                body: `
+                    <p class="mb-2"><strong>1. Recycled Bottle Planters:</strong><br><span class="text-xs text-gray-600">Cut used plastic bottles, add drainage holes at the base, fill with soil, and plant small indoor herbs.</span></p>
+                    <p class="mb-2"><strong>2. Mini Kitchen Composting:</strong><br><span class="text-xs text-gray-600">Collect vegetable scraps and fruit peels in a sealed container mixed with soil to produce rich organic fertilizer.</span></p>
+                    <p><strong>3. Eco-Friendly Multi-Surface Cleaner:</strong><br><span class="text-xs text-gray-600">Mix white vinegar, water, and lemon peels to create a natural, chemical-free home cleaning spray.</span></p>
+                `
+            },
+            11: {
+                title: "11. Success Stories & Future Roadmap",
+                body: `
+                    <p class="mb-3"><strong>Campus Sustainability Milestones:</strong><br>UniKL successfully reduced overall campus carbon emissions by 15% through solar panel installations on main building rooftops and paperless digital workflows.</p>
+                    <p><strong>Roadmap to 2030:</strong><br>Achieving full Zero-Waste Campus status, expanding pedestrian-only zones, and ensuring 100% of campus electrical fixtures meet 5-star energy efficiency ratings.</p>
+                `
+            }
+        };
+
+        function openModal(id) {
+            const data = contentData[id];
+            if (data) {
+                document.getElementById('modal-title').innerText = data.title;
+                document.getElementById('modal-body').innerHTML = data.body;
+                document.getElementById('custom-modal').classList.remove('hidden');
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('custom-modal').classList.add('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header & Navigation -->
+    <header class="bg-emerald-800 text-white p-4 shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">EcoAction UniKL</h1>
+            <span class="text-xs bg-emerald-700 px-3 py-1 rounded-full">Interactive Assignment Portal</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 space-y-4 my-6 flex-grow w-full">
+        <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-emerald-900 mb-6">
+            <h2 class="font-bold text-lg">Welcome to UniKL Earth Day & Sustainability Portal</h2>
+            <p class="text-sm mt-1">Please click on any module below to view the detailed content and information.</p>
+        </div>
+
+        <!-- Grid Modules (11 Interactive Cards) -->
+        <div class="grid md:grid-cols-2 gap-4">
+
+            <div onclick="openModal(1)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">1. History of Earth Day</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(2)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">2. Environmental Issues</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(3)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">3. Sustainable Practices</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(4)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">4. Earth Day Events</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(5)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">5. Spotlight on Activists</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(6)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">6. Student Projects</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(7)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">7. Volunteer Opportunities</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(8)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">8. Interactive Quizzes</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(9)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">9. Resource Library</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(10)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition">
+                <h3 class="text-lg font-bold text-emerald-800">10. DIY Eco-Projects</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+            <div onclick="openModal(11)" class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-emerald-500 cursor-pointer transition md:col-span-2">
+                <h3 class="text-lg font-bold text-emerald-800">11. Success Stories & Future Roadmap</h3>
+                <p class="text-xs text-gray-500 mt-2">Click to read full details ➔</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pop-up Window / Modal View -->
+    <div id="custom-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-gray-100 max-h-[85vh] flex flex-col">
+            <h3 id="modal-title" class="text-xl font-bold text-emerald-800 mb-4 pb-2 border-b"></h3>
+            <div id="modal-body" class="overflow-y-auto pr-2 text-gray-700 leading-relaxed text-sm flex-grow">
+                <!-- Content injected dynamically -->
+            </div>
+            <div class="flex justify-end pt-4 mt-2 border-t">
+                <button onclick="closeModal()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-6 py-2 rounded-lg shadow-sm transition">
+                    Close View
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Rubric Requirements -->
+    <footer class="bg-gray-800 text-white text-xs p-6 text-center space-y-1">
+        <p>&copy; 2026 UniKL Group Student Project. All rights reserved.</p>
+        <p>Statement of Authorship: Prepared by Group Students | Date Last Edited: October 31, 2026</p>
+    </footer>
+
+</body>
+</html>
